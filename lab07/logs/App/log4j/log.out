@@ -1,0 +1,61 @@
+2026-10-05 00:16:53,578 INFO [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - Application is starting...
+2026-10-05 00:16:53,579 INFO [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - Booking B001 priced successfully
+2026-10-05 00:16:53,579 INFO [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - Booking B002 priced successfully
+2026-10-05 00:16:53,580 INFO [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - Booking B003 priced successfully
+2026-10-05 00:16:53,580 ERROR [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - Booking B004 failed
+edu.psu.se411.lab07.exception.MissingInformationException: Luggage weight is not provided
+	at edu.psu.se411.lab07.Booking.requireProvided(Booking.java:25)
+	at edu.psu.se411.lab07.FlightBooking.calculateTotalPrice(FlightBooking.java:33)
+	at edu.psu.se411.lab07.MainApp.computeTotalPrice(MainApp.java:17)
+	at edu.psu.se411.lab07.MainApp.run(MainApp.java:22)
+	at edu.psu.se411.lab07.MainApp.main(MainApp.java:39)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.executeMainMethod(AbstractExecJavaBase.java:402)
+	at org.codehaus.mojo.exec.ExecJavaMojo.executeMainMethod(ExecJavaMojo.java:142)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.doExecClassLoader(AbstractExecJavaBase.java:377)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.lambda$execute$0(AbstractExecJavaBase.java:287)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2026-10-05 00:16:53,584 ERROR [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - Booking B005 failed
+edu.psu.se411.lab07.exception.InvalidArgumentException: Luggage weight must be between 0.0 and 40.0 but was 55.0
+	at edu.psu.se411.lab07.Booking.requireInRange(Booking.java:32)
+	at edu.psu.se411.lab07.FlightBooking.calculateTotalPrice(FlightBooking.java:34)
+	at edu.psu.se411.lab07.MainApp.computeTotalPrice(MainApp.java:17)
+	at edu.psu.se411.lab07.MainApp.run(MainApp.java:22)
+	at edu.psu.se411.lab07.MainApp.main(MainApp.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.executeMainMethod(AbstractExecJavaBase.java:402)
+	at org.codehaus.mojo.exec.ExecJavaMojo.executeMainMethod(ExecJavaMojo.java:142)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.doExecClassLoader(AbstractExecJavaBase.java:377)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.lambda$execute$0(AbstractExecJavaBase.java:287)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2026-10-05 00:16:53,584 ERROR [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - Booking B006 failed
+edu.psu.se411.lab07.exception.InvalidArgumentException: Distance must be between 1.0 and 2000.0 but was 3000.0
+	at edu.psu.se411.lab07.Booking.requireInRange(Booking.java:32)
+	at edu.psu.se411.lab07.TrainBooking.calculateTotalPrice(TrainBooking.java:28)
+	at edu.psu.se411.lab07.MainApp.computeTotalPrice(MainApp.java:17)
+	at edu.psu.se411.lab07.MainApp.run(MainApp.java:22)
+	at edu.psu.se411.lab07.MainApp.main(MainApp.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.executeMainMethod(AbstractExecJavaBase.java:402)
+	at org.codehaus.mojo.exec.ExecJavaMojo.executeMainMethod(ExecJavaMojo.java:142)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.doExecClassLoader(AbstractExecJavaBase.java:377)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.lambda$execute$0(AbstractExecJavaBase.java:287)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2026-10-05 00:16:53,585 ERROR [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - Booking B007 failed
+edu.psu.se411.lab07.exception.InvalidArgumentException: Number of days must be between 1.0 and 30.0 but was 0.0
+	at edu.psu.se411.lab07.Booking.requireInRange(Booking.java:32)
+	at edu.psu.se411.lab07.CarRentalBooking.calculateTotalPrice(CarRentalBooking.java:27)
+	at edu.psu.se411.lab07.MainApp.computeTotalPrice(MainApp.java:17)
+	at edu.psu.se411.lab07.MainApp.run(MainApp.java:22)
+	at edu.psu.se411.lab07.MainApp.main(MainApp.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.executeMainMethod(AbstractExecJavaBase.java:402)
+	at org.codehaus.mojo.exec.ExecJavaMojo.executeMainMethod(ExecJavaMojo.java:142)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.doExecClassLoader(AbstractExecJavaBase.java:377)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.lambda$execute$0(AbstractExecJavaBase.java:287)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2026-10-05 00:16:53,585 INFO [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - Application is stopping...
